@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image responsive-1</title>
+    <style>
+         .flex1{
+            display: flex;
+            margin-bottom: 20px;
+            gap: 20px;
+            
+
+        }
+        .img1{
+            width: 50%;
+        }
+        .flex2{
+            display: flex;
+            gap: 20px;
+        }
+        .img2{
+            width: 50%;
+        }
+        @media screen and (max-width:576px) {
+            .flex1{
+                flex-direction: column;
+                
+            }
+            .img1{
+                width: 100%;
+            }
+            .flex2{
+                flex-direction: column-reverse;
+            }
+            .img2{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <div class="flex1">
+                <img class="img1" src="images/food1.jpg" alt="">
+              <div>
+                <h2>Post title will be here</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, necessitatibus quas. Expedita, vel ipsum. Consequatur esse tenetur deserunt voluptatibus veniam expedita soluta minima sapiente illum, facilis quae quas doloribus ducimus?</p>
+                <button>About more</button >
+              </div>
+            </div>
+            <div class="flex2">
+                <div>
+                    <h2>Post title will be here</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quibusdam dicta asperiores quidem quas odio amet et necessitatibus fuga, dolorum ipsum est, voluptates architecto reiciendis! Vero nulla ratione libero reprehenderit.</p>
+                    <button>About more</button>
+                </div>
+                <img class="img2" src="images/food2.jpg" alt="">
+               
+               
+            </div>
+            
+        </section>
+    </main>
+    
+
+</body>
+</html>
