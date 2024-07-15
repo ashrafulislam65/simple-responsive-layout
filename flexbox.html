@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .box-left{
+            width: 400px;
+            height: 580px;
+            border: 2px solid white;
+            background-color: grey;
+            border-radius: 5px;
+            text-align: center;
+
+           
+
+        }
+        .box-right{
+            width: 600px;
+            height: 580px;
+            border: 2px solid white;
+            background-color: beige;
+            border-radius: 5px;
+            text-align: center;
+            
+        }
+        .box{
+            display: flex;
+            padding-top: 10px;
+            
+            height:600px;
+            border: 2px solid black;
+            border-radius: 5px;
+            justify-content: space-around;
+            
+        }
+        @media screen and (max-width: 576px) {
+            .box{
+                flex-direction: column;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+   <section class="box">
+        <div class="box-left">
+            Left
+
+        </div >
+           
+        <div class="box-right">
+            Right
+
+        </div>
+   </section>
+</body>
+</html>
